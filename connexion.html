@@ -22,9 +22,11 @@
         </table>  </br></br>
       
         <center>
-            <form method= "POST" action="traitement.php">
-            Mail  <input type="email" name="mail"  pattern=".+@google.com" size="30" required><br/><br/>
-            Mdp1  <input type="password" placeholder="8 caractère min"  minlength="8" required>
+            <form method= "POST" action="connexion.php">
+                Mail  <input type="email"  name="mail" placeholder=" @google.com"  
+                pattern="[A-Za-z0-9z@_-+.]" size="30" required> 
+            Mdp1  <input type="password" placeholder="8 caractère min" name="password"  minlength="8" required>
+            <input type="submit" value="valider">
             </form>
         </center>
     </body>

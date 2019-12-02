@@ -16,7 +16,7 @@
                 
     <table width="100%" height="7%" bgcolor="#696047">
     <tr >
-        
+        <th><a href="accueil.html"target=_blank><font color="white">Accueil</font></a></th>
         <th><a href="ajout.html"target=_blank><font color="white">Ajouter</font></a></th>
         <th><a href="suppression.html"target=_blank><font color="white">Supprimer</font></a></th>
         <th><a href="modif.html"target=_blank><font color="white">Modifier</font></a></th>
@@ -25,13 +25,30 @@
         <th><img src="image/deconex.png" alt="art" width="" height=""></th>
     </tr>
     </table>  </br></br>
-    <div class="container">
-            <div class="card"><a href="ajout-util.html">Ajouter un utilisateur</a></div>
-            <div class="card"><a href="#">Ajouter un article</a></div>
-            <div class="card"><a href="#">Modifier un article</a></div>
-            <div class="card"><a href="#">Supprimer un article</a></div>
-            <div class="card"><a href="#">voir tous les articles</a></div>
-            <div class="card"><a href="#">voir tous les utilisateurs</a></div>
-        </div>
-   
+    <center><h1>nouveau utilisateur</h1></center>
+
+    <center><form method= "POST" action="inscrip-util.php">
+            Nom   <input type="text" name="nom" size="15"  pattern="[A-Za-z]{3,}" 
+            title="3 lettres min" required>
+
+            prenom   <input type="text" name="prenom" size="15" pattern="[A-Za-z]{3,}" 
+            title="3 lettres min" required></br></br>
+
+            Mail  <input type="email"  name="mail" placeholder=" @google.com"  
+            pattern="[A-Za-z0-9z@_-+.]" size="30" required> 
+           
+            Mdp  <input type="password"  name="pass" placeholder="8 caractère min"  
+            minlength="8" required>
+
+            Tel  <input type="text" name="phone" size="15"></br> </br>
+            statut  <input type="text" name="statut" >
           
+           
+
+            <input type="submit" value="valider">
+            
+          </form></center>
+
+
+</body>
+</html>

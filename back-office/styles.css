@@ -20,15 +20,84 @@ body{
 	color: white;
 	font-size: 1.4rem;
 
-	/* Inhalt in den Cards zentrieren */
 	display: flex; 
     justify-content: center; 
     align-items: center;
 
-    /* Unterstreichung von den Links entfernen */
     text-decoration: none;
     margin-top: 100px;
 }
 .card a{
     color:white;
 }
+/*menu accordeon*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+	margin: 50px auto;
+	width: 500px;
+  }
+  
+  h1 {
+	font-size: 32px;
+	font-size: 2rem;
+	text-align: center;
+  }
+  
+  .list {
+	padding: 0;
+	background: #c1c1c1;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 18px;
+	font-size: 1.125rem;
+	list-style: none;
+  }
+  .list li a {
+	display: block;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	background: #3e3f44;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);
+	-webkit-filter: dropshadow(color=#000, offx=1, offy=0);
+			filter: dropshadow(color=#000, offx=1, offy=0);
+	padding: 10px;
+	padding-left: 20px;
+  }
+  .list li a:hover {
+	background: #4a6ba2;
+  }
+  
+  .item {
+	margin: 0;
+	padding: 0;
+	height: 0;
+	overflow: hidden;
+	list-style: none;
+	transition: 1s;
+  }
+  .item li a {
+	background: #d8d3a5;
+	font-size: 14px;
+	font-size: 0.875rem;
+	color: #47689d;
+	text-shadow: 1px 0px 1px rgba(255, 255, 255, 0.5);
+	-webkit-filter: dropshadow(color=#000, offx=1, offy=0);
+			filter: dropshadow(color=#000, offx=1, offy=0);
+  }
+  .item li a:hover {
+	background: #beb66a;
+  }
+  
+  .list li:hover ul {
+	height: 114px;
+	overflow: hidden;
+  }
+  
